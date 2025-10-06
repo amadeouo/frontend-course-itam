@@ -103,8 +103,12 @@ img {
   background-color: black;
 }
 
+.theme-switcher__input:checked + .theme-switcher__wrapper .sun {
+  color: white;
+}
+
 .theme-switcher__input:checked + .theme-switcher__wrapper {
-  border: 2px solid white;
+  border: 2px solid black;
   transition-duration: 0.2s;
   background-color: white;
 }
