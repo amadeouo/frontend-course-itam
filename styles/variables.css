@@ -1,0 +1,7 @@
+:root {
+  --color-gray: #1f1f27;
+  --shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+
+  --border: 2px solid black;
+  --border-radius: 30px;
+}

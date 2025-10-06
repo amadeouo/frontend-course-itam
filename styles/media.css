@@ -1,0 +1,19 @@
+@media (max-width: 720px) {
+  .header__navigation-list {
+    gap: 30px;
+  }
+}
+
+@media (max-width: 610px) {
+  .header__navigation-list {
+    display: none;
+  }
+  
+  .theme-switcher {
+    display: none;
+  }
+
+  .functionals__burger-menu {
+    display: flex;
+  }
+}

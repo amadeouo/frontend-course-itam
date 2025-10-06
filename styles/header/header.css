@@ -1,0 +1,131 @@
+@import "../variables.css";
+
+/*
+ Пишу по БЭМ, с расчетом на то, что потом хочу переделать в scss
+ И на след уроках в js сделаю функционал для смены темы
+*/
+
+.header {
+  display: flex;
+  justify-content: center;
+  padding-block: 25px;
+}
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.header__name {
+  font-size: 26px;
+  font-weight: 700;
+  text-decoration: none;
+  color: white;
+
+  &:hover {
+    color: purple;
+  }
+}
+
+.header__navigation-list {
+  display: flex;
+  gap: 70px;
+  font-size: 24px;
+}
+
+.header__navigation-item {
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+
+  &:hover {
+    color: purple;
+  }
+}
+
+
+.header__functionals {
+  padding: 5px;
+}
+
+.theme-switcher {
+  padding: 5px;
+}
+
+.theme-switcher__input {
+  display: none;
+}
+
+img {
+  pointer-events: none;
+}
+
+.theme-switcher__wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  border-radius: var(--border-radius);
+  user-select: none;
+  box-shadow: var(--shadow);
+  border: 2px solid white;
+
+  &:hover {
+    border: 2px solid purple;
+  }
+}
+
+.theme-switcher__image-ball {
+  position: absolute;
+  background-color: white;
+  border-radius: var(--border-radius);
+  transition: all 0.2s ease;
+  pointer-events: none;
+  z-index: 1;
+  width: 50px;
+  height: 50px;
+}
+
+.theme-switcher__wrapper svg {
+  padding: 15px;
+  z-index: 2;
+  width: 50px;
+  height: 50px;
+}
+
+.moon {
+  color: black;
+}
+
+.theme-switcher__input:checked + .theme-switcher__wrapper .theme-switcher__image-ball {
+  transform: translateX(100%);
+  background-color: black;
+}
+
+.theme-switcher__input:checked + .theme-switcher__wrapper {
+  border: 2px solid white;
+  transition-duration: 0.2s;
+  background-color: white;
+}
+
+.functionals__burger-menu {
+  display: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 15px;
+  background: #1f1f27;
+  user-select: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  border: 2px solid transparent;
+
+  &:hover {
+    border: 2px solid purple;
+  }
+}
+
+
+
+
+
+

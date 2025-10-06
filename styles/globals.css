@@ -1,0 +1,32 @@
+@font-face {
+  font-family: Play;
+  src: url("fonts/Play-Regular.woff2") format("woff2");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: Play;
+  src: url("fonts/Play-Bold.woff2");
+  font-weight: 700;
+}
+
+* {
+  transition-duration: 0.2s;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Play", sans-serif;
+  font-weight: 400;
+  background: black;
+  color: white;
+  transition-duration: 0.2s;
+}
+
+.container {
+  max-width: 1200px;
+  padding-inline: 25px;
+  width: 100%;
+}

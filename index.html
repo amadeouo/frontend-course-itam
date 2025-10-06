@@ -7,45 +7,102 @@
     name="viewport"
   >
   <title>Миша Володько | ITAM Courses</title>
-  <style>
-    ul {
-      padding: 0;
-    }
-  </style>
+  <link rel="stylesheet" href="styles/index.css">
 </head>
 <body>
-  <header class="header">
-    <h1 class="header__my-name">Миша Володько</h1>
+  <header class="header container">
+    <div class="header__inner">
+      <a class="header__name" href="#">Миша</a>
+      <nav class="header__navigation-list">
+        <a class="header__navigation-item" href="#">О себе</a>
+        <a class="header__navigation-item" href="#">Стек</a>
+        <a class="header__navigation-item" href="#">Портфолио</a>
+      </nav>
+      <div class="header__functionals">
+        <div class="functionals__theme-switcher theme-switcher">
+          <input
+            class="theme-switcher__input"
+            type="checkbox"
+            id="theme"
+          />
+          <label
+            class="theme-switcher__wrapper"
+            for="theme"
+            aria-label="Theme switcher"
+          >
+            <svg class="moon" width="800px" height="800px" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+              <path d="M13 6V3M18.5 12V7M14.5 4.5H11.5M21 9.5H16M15.5548 16.8151C16.7829 16.8151 17.9493 16.5506 19 16.0754C17.6867 18.9794 14.7642 21 11.3698 21C6.74731 21 3 17.2527 3 12.6302C3 9.23576 5.02061 6.31331 7.92462 5C7.44944 6.05072 7.18492 7.21708 7.18492 8.44523C7.18492 13.0678 10.9322 16.8151 15.5548 16.8151Z" stroke="#FFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <svg class="sun" width="800px" height="800px" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 1.25C12.4142 1.25 12.75 1.58579 12.75 2V4C12.75 4.41421 12.4142 4.75 12 4.75C11.5858 4.75 11.25 4.41421 11.25 4V2C11.25 1.58579 11.5858 1.25 12 1.25ZM3.66865 3.71609C3.94815 3.41039 4.42255 3.38915 4.72825 3.66865L6.95026 5.70024C7.25596 5.97974 7.2772 6.45413 6.9977 6.75983C6.7182 7.06553 6.2438 7.08677 5.9381 6.80727L3.71609 4.77569C3.41039 4.49619 3.38915 4.02179 3.66865 3.71609ZM20.3314 3.71609C20.6109 4.02179 20.5896 4.49619 20.2839 4.77569L18.0619 6.80727C17.7562 7.08677 17.2818 7.06553 17.0023 6.75983C16.7228 6.45413 16.744 5.97974 17.0497 5.70024L19.2718 3.66865C19.5775 3.38915 20.0518 3.41039 20.3314 3.71609ZM12 7.75C9.65279 7.75 7.75 9.65279 7.75 12C7.75 14.3472 9.65279 16.25 12 16.25C14.3472 16.25 16.25 14.3472 16.25 12C16.25 9.65279 14.3472 7.75 12 7.75ZM6.25 12C6.25 8.82436 8.82436 6.25 12 6.25C15.1756 6.25 17.75 8.82436 17.75 12C17.75 15.1756 15.1756 17.75 12 17.75C8.82436 17.75 6.25 15.1756 6.25 12ZM1.25 12C1.25 11.5858 1.58579 11.25 2 11.25H4C4.41421 11.25 4.75 11.5858 4.75 12C4.75 12.4142 4.41421 12.75 4 12.75H2C1.58579 12.75 1.25 12.4142 1.25 12ZM19.25 12C19.25 11.5858 19.5858 11.25 20 11.25H22C22.4142 11.25 22.75 11.5858 22.75 12C22.75 12.4142 22.4142 12.75 22 12.75H20C19.5858 12.75 19.25 12.4142 19.25 12ZM17.0255 17.0252C17.3184 16.7323 17.7933 16.7323 18.0862 17.0252L20.3082 19.2475C20.6011 19.5404 20.601 20.0153 20.3081 20.3082C20.0152 20.6011 19.5403 20.601 19.2475 20.3081L17.0255 18.0858C16.7326 17.7929 16.7326 17.3181 17.0255 17.0252ZM6.97467 17.0253C7.26756 17.3182 7.26756 17.7931 6.97467 18.086L4.75244 20.3082C4.45955 20.6011 3.98468 20.6011 3.69178 20.3082C3.39889 20.0153 3.39889 19.5404 3.69178 19.2476L5.91401 17.0253C6.2069 16.7324 6.68177 16.7324 6.97467 17.0253ZM12 19.25C12.4142 19.25 12.75 19.5858 12.75 20V22C12.75 22.4142 12.4142 22.75 12 22.75C11.5858 22.75 11.25 22.4142 11.25 22V20C11.25 19.5858 11.5858 19.25 12 19.25Z" fill="#FFFF"/>
+            </svg>
+            <div class="theme-switcher__image-ball"></div>
+          </label>
+        </div>
+        <button
+          class="functionals__burger-menu"
+          title="Menu"
+          aria-label="menu"
+        >
+          <img
+            src="styles/images/burger-menu.svg"
+            alt=""
+          >
+        </button>
+      </div>
+    </div>
   </header>
 
-  <main class="about-me">
-    <p class="about-me__my-story">Учусь на 4 курсе Управления Проектами, хочу стать фронтендером</p>
-    <p class="about-me__my-story">Я из города Донецк, поступил на менеджмент сначала на бюджет, до конца 2 курса я себе говорил, что никогда не стану программистом и что мне это абсолютно не интересно.</p>
-    <p class="about-me__my-story">Но уже на 3 курсе у нас стали появляться предметы, кое-как связаные с этой сферой, начал изучать SQL и мне понравилось. В следующем семестре у нас начались пары по HTML + CSS (но тут надо сказать, что к тому моменту я уже сам пощупал html и css на курсе от Никиты Шультаса, на деле он оказался полной хуйней, но меня это завлекло дальше).</p>
-    <p class="about-me__my-story">И вот так, параллельно просматривая курсы от Ламкова и посещая Пары я стал понимать на каком-то уровне HTML + CSS и чуть позже прошел еще курс JS от Ламкова. В душе мне конечно хотелось перейти в ИКН, но я понимаю, что платить мне не особо хотелось, а если перепоступать, то меня заберут на сво (а я домой обратно не хочу).</p>
-    <p class="about-me__my-story">Сейчас работаю маркетологом-аналитиком, иногда пишу скрипты на питоне для оптимизации, знаю SQL.</p>
-    <p class="about-me__my-story">Задумываюсь о поступлении на магу в ИКН (может быть даже на платную магу Веб-разработчик, но пока еще не спрашивал)</p>
+  <main class="info container">
+    <div class="info__inner info-list">
+      <div class="info__my-story info-item">
+        <h2 class="my-story__title title">Обо мне</h2>
+        <p class="my-story__text">Учусь на 4 курсе Управления Проектами, хочу стать фронтендером</p>
+        <p class="my-story__text">Я из города Донецк, поступил на менеджмент сначала на бюджет, до конца 2 курса я себе говорил, что никогда не стану программистом и что мне это абсолютно не интересно.</p>
+        <p class="my-story__text">Уже на 3 курсе у нас стали появляться предметы, кое-как связаные с этой сферой, начал с SQL и мне понравилось. В следующем семестре у нас начались пары по HTML + CSS</p>
+        <p class="my-story__text">И вот так, параллельно просматривая курсы от Ламкова и посещая пары я стал понимать на каком-то уровне HTML + CSS и чуть позже прошел еще курс JS от Ламкова. Мне конечно хотелось перейти в ИКН, но я понимаю, что платить мне не особо хотелось, а если перепоступать, то меня заберут на сво (а я домой обратно не хочу).</p>
+        <p class="my-story__text">Сейчас работаю маркетологом-аналитиком, иногда пишу скрипты на питоне</p>
+        <p class="my-story__text">Задумываюсь о поступлении на магу в ИКН (может быть даже на платную магу Веб-разработчик, но пока еще не спрашивал)</p>
+      </div>
+
+      <div class="info__additional info-item">
+        <div class="additional__facts">
+          <h2 class="facts__title title">Интересные факты</h2>
+          <ul class="facts__list">
+            <li class="facts__item">Играл в сборной по баскетболу на 1-2 курсе</li>
+            <li class="facts__item">Поступил в университет в 16 лет</li>
+          </ul>
+        </div>
+
+        <div class="additional__soc1als">
+          <h2 class="soc1als__title title">Cоц. сети</h2>
+          <div class="soc1als__images">
+            <a class="soc1als__image"
+               href="https://t.me/amadeooo"
+               target="_blank"
+            >
+              <img
+                src="styles/images/telegram.png"
+                alt="telegram"
+                loading="lazy"
+              />
+            </a>
+            <a class="soc1als__image"
+               href="https://www.instagram.com/amade.ooo"
+               target="_blank"
+            >
+              <img
+                src="styles/images/instagram.png"
+                alt="instagram"
+                loading="lazy"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
   </main>
 
-  <section class="facts">
-    <h2 class="facts__title">Интересные факты обо мне</h2>
-    <ul class="facts__list">
-      <li class="facts__item">Играл в сборной по баскетболу на 1-2 курсе</li>
-      <li class="facts__item">Поступил в университет в 16 лет</li>
-    </ul>
-  </section>
-
-  <footer class="footer__soc1als">
-    <a class="soc1als__telegram"
-      href="https://t.me/amadeooo"
-      target="_blank"
-    >
-      <img
-        src="icons8-telegram-48.png"
-        alt="telegram"
-        loading="lazy"
-      />
-    </a>
-  </footer>
+  <header class="header container"></header> <!-- я тут не знаю что написать, что можно добавить? -->
 </body>
 </html>

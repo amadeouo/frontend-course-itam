@@ -1,0 +1,7 @@
+@import "normalize.css";
+@import "variables.css";
+@import "globals.css";
+@import "header/header.css";
+@import "main/main.css";
+
+@import "media.css";
