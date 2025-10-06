@@ -1,6 +1,6 @@
 @import "../variables.css";
 
-.info-list {
+.info__inner {
   display: grid;
   grid-template-columns: 2fr 1fr;
   grid-template-rows: auto auto;
@@ -8,11 +8,8 @@
   gap: 30px;
 }
 
-.info-item:nth-child(1) {grid-column: 1 / 2;}
-.info-item:nth-child(2) {grid-column: 2 / 3;}
-.info-item:nth-child(3) {grid-column: 2 / 3;}
-
-.info-item {
+.info__additional,
+.info__my-story {
   display: flex;
   justify-content: center;
   flex-direction: column;

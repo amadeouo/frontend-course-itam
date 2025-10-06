@@ -2,6 +2,15 @@
   .header__navigation-list {
     gap: 30px;
   }
+
+  .info__inner {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .info__additional {
+    width: 100%;
+  }
 }
 
 @media (max-width: 610px) {
